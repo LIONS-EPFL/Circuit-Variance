@@ -1,0 +1,33 @@
+# macOS / editor local files
+.DS_Store
+**/.DS_Store
+.codex
+.codex/
+.agents/
+.vscode/
+.idea/
+
+# Python cache/build metadata
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+**/*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Project outputs and large local artifacts
+/results*
+*.zip
+*.html
+visualization/**/*.html
+
+# Local model/cache artifacts
+circuit_sparsity_assets/local_cache/

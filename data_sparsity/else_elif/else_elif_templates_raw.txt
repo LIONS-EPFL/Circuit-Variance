@@ -1,0 +1,454 @@
+Source: https://openaipublic.blob.core.windows.net/circuit-sparsity/viz/csp_yolo2/else_elif_beeg/prune_v4/k_optim/viz_data.pt
+Shape: (32, 244)
+
+=== Sample 00 | tokens=129 ===
+, tmp_candidates, color)
+                for bs in candis:
+                    for v in idx:
+                        candis += V[v]
+        output.append([i, candis])
+    return output
+
+def calc_output_values(result_class, output, V, n, color, field, indices, N):
+    result = get_result(V, n, N, result_class.color, field, indices)
+    if result:
+        result_class.result = result
+        result_class.counts = output
+        return result
+    else 
+
+=== Sample 01 | tokens=64 ===
+�� 비교 함수
+def check_answer(problem, answer):
+    if eval(problem) == answer:
+        print("정답입니다!")
+    else 
+
+=== Sample 02 | tokens=37 ===
+ # add it to the list for redistribution
+            if label_counts[node.topic] >= target_size:
+                redistribute_nodes.append(node)
+            else 
+
+=== Sample 03 | tokens=79 ===
+    if program_dir == 0:
+        program_dir = -1
+    elif program_dir == 1:
+        program_dir = 1
+    elif program_dir == 2:
+        program_dir = -1
+    elif program_dir == 3:
+        program_dir = -1
+    else 
+
+=== Sample 04 | tokens=108 ===
+slots = deque(time_slots)
+    while slots:
+        train, platform, time = slots.popleft()
+        if platform in platforms:
+            if platforms_schedule[platform]:
+                last_train_time = platforms_schedule[platform][-1][-1][-1]
+                if time[0] > last_train_time:
+                    start_time = last_train_time + 1
+                else 
+
+=== Sample 05 | tokens=198 ===
+    fringe = Fringe()
+    fringe.push(Node(start, 0))
+
+    while not fringe.isEmpty():
+        current = fringe.pop()
+        has_visited.add(current.current_node)
+
+        if goal_test(current.current_node):
+            return current.getVisited(), current.depth
+
+        for neighbor in successors(current.current_node):
+            if neighbor not in has_visited:
+                fringe.push(Node(neighbor, current.depth + 1, current))
+
+
+def test_strategy(start, has_visited, goal_test, successors, strategy):
+    if strategy == 'bfs':
+        return bfs(start, has_visited, goal_test, successors)
+    elif strategy == 'dfs':
+        return dfs(start, has_visited, goal_test, successors)
+    else 
+
+=== Sample 06 | tokens=102 ===
+ents if coeff[0:-3] in var]:
+        z3_var = Int(var[0:-3])
+        z3_constraint += z3_var - (z3_var % coefficients[var[-1]])
+        z3_constraint -= coefficients[var]
+    
+    if isl_constraint.is_equality():
+        return z3_constraint == -coefficients['1']
+    else 
+
+=== Sample 07 | tokens=182 ===
+lationships):
+    for relationship in relationships:
+        parent_id, child_id = relationship
+        if not persons[child_id].is_root():
+            persons[child_id].parent = persons[parent_id].parent
+        persons[parent_id].parent = child_id
+
+def calculate_family_stats(persons):
+    family_stats = {}
+    for person in persons.values():
+        root_id = person.parent
+        while persons[root_id].parent != root_id:
+            root_id = persons[root_id].parent
+        if root_id not in family_stats:
+            family_stats[root_id] = (person.area, person.household_count)
+        else 
+
+=== Sample 08 | tokens=38 ===
+deffun Live(nums, comen, value):
+    if (nums <= 15): return gianlyung(nums, value)
+    else 
+
+=== Sample 09 | tokens=244 ===
+gnment.
+        
+    Returns:
+        list: List of aligned strings.
+    """
+    if character is not None:
+        # Find the maximum length of strings before and after the delimiter
+        max_left = max(string.find(character) for string in strings if character in string)
+        max_right = max(len(string) - string.find(character) for string in strings if character in string)
+        
+        # Align strings based on the maximum lengths
+        aligned_strings = []
+        for string in strings:
+            if character in string:
+                left, right = string.split(character, 1)
+                left_padding = ' ' * (max_left - len(left))
+                right_padding = ' ' * (max_right - len(right) - 1)
+                aligned_strings.append(left_padding + left + character + right + right_padding)
+            else 
+
+=== Sample 10 | tokens=176 ===
+ID(10, 1);
+TopPanel Voldemort;
+for(TabsContext.Body item: Array) {
+    item.onClick(View.OFF);
+}<|endoffile|>true
+4242
+0
+9
+0
+import math
+
+
+def find_value_lessthan (value, data):
+    if not data:
+        return -1
+    low = 0
+    high = len(data) - 1
+    result = -1
+    while low <= high:
+        index = math.floor((low + high) / 2)
+        if data[index] < value:
+            result = index
+            low = index + 1
+        else 
+
+=== Sample 11 | tokens=73 ===
+stance.Id)
+
+for board_instance in board_instances:
+    if room_num:
+        set_parameter(board_instance, BuiltInParameter.RBS_REFERENCE_NUMBER, room_name + " - " + room_num)
+    else 
+
+=== Sample 12 | tokens=213 ===
+: Parser.Context):
+    text = pretty_ast(context.tree)
+    print(f"Original code: \n\t {context.source}")
+    print("Parsing tree:")
+    print(text)
+
+
+
+#Comparison
+
+def display(value):
+    if value is None:
+        return "?"
+    if isinstance(value, list):
+        return "[" + ", ".join(
+            [display(x) for x in value]).strip() + "]"
+    return str(value)
+
+#Compare
+def compare_objects(left, right, name="?", path=""):
+    if isinstance(left, (list, tuple)):
+        if isinstance(right, (list, tuple)):
+            for i in range(len(min(left, right))):
+                compare_objects(left[i], right[i], name, f"{path}[{i}]")
+        else 
+
+=== Sample 13 | tokens=158 ===
+z" to put the live cell, "x" to erase')
+            print('Dead Cell: '+self.C[0]+' |'+' Live Cell:'+self.C[1])
+            while True:
+                self.playermovement()
+                self.Ready()
+                if(self.b=='y'):
+                    if(str(self.getch())=='\x1b'):
+                        self.boardinit()
+                        self.boardbody()
+                        if(self.C[self.arr[self.y][self.x]]) == self.C[0]:
+                            self.arr[self.y][self.x]=1
+                        else 
+
+=== Sample 14 | tokens=75 ===
+(ord(c) for c in element) >= constraint_mean * i else -1
+        peer = random.choice(list(elements - {element}))
+        
+        if random.random() < 0.5:
+            constraint_list.append(f"ML,{peer},{element}")
+        else 
+
+=== Sample 15 | tokens=90 ===
+ heapq
+import random
+import time
+
+
+class AStar:
+    def __init__(self, maze, start=(0, 0), end=None):
+        self.maze = maze
+        self.num_rows, self.num_cols = maze.shape
+        self.start = start
+        if end is None:
+            self.goal = (self.num_rows-1, self.num_cols-1)
+        else 
+
+=== Sample 16 | tokens=129 ===
+, tmp_candidates, color)
+                for bs in candis:
+                    for v in idx:
+                        candis += V[v]
+        output.append([i, candis])
+    return output
+
+def calc_output_values(result_class, output, V, n, color, field, indices, N):
+    result = get_result(V, n, N, result_class.color, field, indices)
+    if result:
+        result_class.result = result
+        result_class.counts = output
+        return result
+    elif 
+
+=== Sample 17 | tokens=64 ===
+�� 비교 함수
+def check_answer(problem, answer):
+    if eval(problem) == answer:
+        print("정답입니다!")
+    elif 
+
+=== Sample 18 | tokens=37 ===
+ # add it to the list for redistribution
+            if label_counts[node.topic] >= target_size:
+                redistribute_nodes.append(node)
+            elif 
+
+=== Sample 19 | tokens=79 ===
+    if program_dir == 0:
+        program_dir = -1
+    elif program_dir == 1:
+        program_dir = 1
+    elif program_dir == 2:
+        program_dir = -1
+    elif program_dir == 3:
+        program_dir = -1
+    elif 
+
+=== Sample 20 | tokens=108 ===
+slots = deque(time_slots)
+    while slots:
+        train, platform, time = slots.popleft()
+        if platform in platforms:
+            if platforms_schedule[platform]:
+                last_train_time = platforms_schedule[platform][-1][-1][-1]
+                if time[0] > last_train_time:
+                    start_time = last_train_time + 1
+                elif 
+
+=== Sample 21 | tokens=198 ===
+    fringe = Fringe()
+    fringe.push(Node(start, 0))
+
+    while not fringe.isEmpty():
+        current = fringe.pop()
+        has_visited.add(current.current_node)
+
+        if goal_test(current.current_node):
+            return current.getVisited(), current.depth
+
+        for neighbor in successors(current.current_node):
+            if neighbor not in has_visited:
+                fringe.push(Node(neighbor, current.depth + 1, current))
+
+
+def test_strategy(start, has_visited, goal_test, successors, strategy):
+    if strategy == 'bfs':
+        return bfs(start, has_visited, goal_test, successors)
+    elif strategy == 'dfs':
+        return dfs(start, has_visited, goal_test, successors)
+    elif 
+
+=== Sample 22 | tokens=102 ===
+ents if coeff[0:-3] in var]:
+        z3_var = Int(var[0:-3])
+        z3_constraint += z3_var - (z3_var % coefficients[var[-1]])
+        z3_constraint -= coefficients[var]
+    
+    if isl_constraint.is_equality():
+        return z3_constraint == -coefficients['1']
+    elif 
+
+=== Sample 23 | tokens=182 ===
+lationships):
+    for relationship in relationships:
+        parent_id, child_id = relationship
+        if not persons[child_id].is_root():
+            persons[child_id].parent = persons[parent_id].parent
+        persons[parent_id].parent = child_id
+
+def calculate_family_stats(persons):
+    family_stats = {}
+    for person in persons.values():
+        root_id = person.parent
+        while persons[root_id].parent != root_id:
+            root_id = persons[root_id].parent
+        if root_id not in family_stats:
+            family_stats[root_id] = (person.area, person.household_count)
+        elif 
+
+=== Sample 24 | tokens=38 ===
+deffun Live(nums, comen, value):
+    if (nums <= 15): return gianlyung(nums, value)
+    elif 
+
+=== Sample 25 | tokens=244 ===
+gnment.
+        
+    Returns:
+        list: List of aligned strings.
+    """
+    if character is not None:
+        # Find the maximum length of strings before and after the delimiter
+        max_left = max(string.find(character) for string in strings if character in string)
+        max_right = max(len(string) - string.find(character) for string in strings if character in string)
+        
+        # Align strings based on the maximum lengths
+        aligned_strings = []
+        for string in strings:
+            if character in string:
+                left, right = string.split(character, 1)
+                left_padding = ' ' * (max_left - len(left))
+                right_padding = ' ' * (max_right - len(right) - 1)
+                aligned_strings.append(left_padding + left + character + right + right_padding)
+            elif 
+
+=== Sample 26 | tokens=176 ===
+ID(10, 1);
+TopPanel Voldemort;
+for(TabsContext.Body item: Array) {
+    item.onClick(View.OFF);
+}<|endoffile|>true
+4242
+0
+9
+0
+import math
+
+
+def find_value_lessthan (value, data):
+    if not data:
+        return -1
+    low = 0
+    high = len(data) - 1
+    result = -1
+    while low <= high:
+        index = math.floor((low + high) / 2)
+        if data[index] < value:
+            result = index
+            low = index + 1
+        elif 
+
+=== Sample 27 | tokens=73 ===
+stance.Id)
+
+for board_instance in board_instances:
+    if room_num:
+        set_parameter(board_instance, BuiltInParameter.RBS_REFERENCE_NUMBER, room_name + " - " + room_num)
+    elif 
+
+=== Sample 28 | tokens=213 ===
+: Parser.Context):
+    text = pretty_ast(context.tree)
+    print(f"Original code: \n\t {context.source}")
+    print("Parsing tree:")
+    print(text)
+
+
+
+#Comparison
+
+def display(value):
+    if value is None:
+        return "?"
+    if isinstance(value, list):
+        return "[" + ", ".join(
+            [display(x) for x in value]).strip() + "]"
+    return str(value)
+
+#Compare
+def compare_objects(left, right, name="?", path=""):
+    if isinstance(left, (list, tuple)):
+        if isinstance(right, (list, tuple)):
+            for i in range(len(min(left, right))):
+                compare_objects(left[i], right[i], name, f"{path}[{i}]")
+        elif 
+
+=== Sample 29 | tokens=158 ===
+z" to put the live cell, "x" to erase')
+            print('Dead Cell: '+self.C[0]+' |'+' Live Cell:'+self.C[1])
+            while True:
+                self.playermovement()
+                self.Ready()
+                if(self.b=='y'):
+                    if(str(self.getch())=='\x1b'):
+                        self.boardinit()
+                        self.boardbody()
+                        if(self.C[self.arr[self.y][self.x]]) == self.C[0]:
+                            self.arr[self.y][self.x]=1
+                        elif 
+
+=== Sample 30 | tokens=75 ===
+(ord(c) for c in element) >= constraint_mean * i else -1
+        peer = random.choice(list(elements - {element}))
+        
+        if random.random() < 0.5:
+            constraint_list.append(f"ML,{peer},{element}")
+        elif 
+
+=== Sample 31 | tokens=90 ===
+ heapq
+import random
+import time
+
+
+class AStar:
+    def __init__(self, maze, start=(0, 0), end=None):
+        self.maze = maze
+        self.num_rows, self.num_cols = maze.shape
+        self.start = start
+        if end is None:
+            self.goal = (self.num_rows-1, self.num_cols-1)
+        elif 

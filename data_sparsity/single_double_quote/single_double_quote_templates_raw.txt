@@ -1,0 +1,354 @@
+Source: https://openaipublic.blob.core.windows.net/circuit-sparsity/viz/csp_yolo1/single_double_quote/prune_v2/128/viz_data.pt
+Shape: (32, 223)
+
+=== Sample 00 | tokens=223 ===
+], 
+     [0, 0, 0, 1, 0, 0, 1, 0], 
+     [0, 0, 0, 0, 1, 1, 0, 0], 
+     [0, 0, 0, 0, 0, 1, 0, 0], 
+     [0, 0, 0, 0, 0, 0, 0, 0], 
+     [0, 0, 0, 0, 0, 0, 0, 1], 
+     [1, 0, 0, 0, 0, 0, 0, 0]]
+
+# Call topological sorting function and print result
+has_cycle, topological_layers = topol_sort(G)
+if has_cycle:
+    print("There is no topological sort, the graph has a cycle
+
+=== Sample 01 | tokens=80 ===
+: distances[n])
+    unvisited_nodes.remove(current_node)
+
+    for neighbor, weight in graph[current_node].items():
+      if distances[current_node] + weight < distances[neighbor]:
+        distances[neighbor] = distances[current_node] + weight
+        predecessors[neighbor] = current_node
+
+  # Print the distances and predecessors
+  print("Distance from node:
+
+=== Sample 02 | tokens=172 ===
+ i, robot in enumerate(robots):
+    robot_task_allocation[robot] = tasks[i]
+
+# Calculate the start time for each robot based on their assigned tasks
+robot_times = {}
+for robot, task in robot_task_allocation.items():
+    task_time = task / 5  # Assuming each task takes 5 units of time
+    start_time = task_time * robot
+    robot_times[robot] = start_time
+
+# Calculate the time saved by optimizing robot usage
+time_saved = sum([time for robot, time in robot_times.items()])
+optimized_total_time = total_time - time_saved
+
+# Display the optimized usage of robots
+print("Optimized Robot Usage:
+
+=== Sample 03 | tokens=44 ===
+ = [item for sublist in Another_Table.values() for item in sublist]
+print(Another_Table_List)
+
+print("Output Question 1:
+
+=== Sample 04 | tokens=60 ===
+_affected_nodes": newly_affected_nodes
+    }
+
+    # Save results to JSON file
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S
+
+=== Sample 05 | tokens=94 ===
+pop()
+        if current_task.completed:
+            continue
+        
+        live_tasks.add(current_task.name)
+        for dependency in current_task.dependencies:
+            if dependency.name not in live_tasks:
+                task_stack.append(dependency)
+        
+        current_task.complete()
+
+    return live_tasks
+
+
+# Usage
+project = Project("Project A
+
+=== Sample 06 | tokens=129 ===
+    
+    for _ in range(length):
+        if goal < decider and goal > nx[0]:
+            bts.append(0)
+            nx = [nx[0], nx[0] + ratios[0] * (nx[1] - nx[0])]
+        elif goal > decider and goal < nx[1]:
+            bts.append(1)
+            nx = [nx[0] + ratios[0] * (nx[1] - nx[0]), nx[1]]
+        else:
+            raise ValueError("Invalid encoded data
+
+=== Sample 07 | tokens=119 ===
+
+        for point, value in mines_with_neighbors.items():
+            if value == -1:
+                continue
+            mines_without_neighbours = update_mines_in_direction_set(point, mines, s, v)
+            if not mines_without_neighbours:
+                mines_with_neighbors[point] = -1
+                changes = True
+                
+    for (x, y), value in mines_with_neighbors.items():
+        if value != -1:
+            print(x, y)
+
+# Example usage
+clear_grid("mine_file.txt
+
+=== Sample 08 | tokens=25 ===
+ n-1):
+        print("Degree should be in the range [3, n-1]
+
+=== Sample 09 | tokens=43 ===
+ = test
+        if D < 1 or D > 31 or H < 0 or H > 24 or M < 0 or M > 60:
+            results.append("Invalid Input
+
+=== Sample 10 | tokens=12 ===
+         if alt < dist.get(v, float("inf
+
+=== Sample 11 | tokens=153 ===
+ for i, position in enumerate(pos):
+        chron_copy.insert(position, unchron[i])
+    
+    return chron_copy
+
+
+def replace_letters(sol_set, scenes):
+    replaced_solutions = []
+    for sol in sol_set:
+        replaced = []
+        for letter in sol:
+            replaced.append(scenes[ord(letter) - 65])
+        replaced_solutions.append(",".join(replaced))
+    
+    return replaced_solutions
+
+
+# Main
+solution_set = solve()
+for solution in solution_set:
+    if len(solution) == 0:
+        print("invalid
+
+=== Sample 12 | tokens=13 ===
+              print("No more unsatisfied points
+
+=== Sample 13 | tokens=39 ===
+import networkx as nx
+import graph_tools as gt
+
+def main():
+    graph = gt.tx_graph()
+    graph.read_data("bigger_data.csv
+
+=== Sample 14 | tokens=163 ===
+ -991, -13832),
+    (15722, -991, -13832),
+    (15840, -991, -13832),
+    (15959, -991, -13832),
+    (15603, 9, -13832),
+    (15722, 9, -13832),
+    (15840, 9, -13832),
+    (15959, 9, -13832)),
+]
+# Function to extract the vertex values in the data
+def get_vertex(vertex_data):
+    for vertex in vertex_data:
+        for point in vertex:
+            if(point == ()):
+                print("No point at the current iteration
+
+=== Sample 15 | tokens=35 ===
+
+    
+    return part1_count, part2_count
+
+def convert_to_set(activity):
+    start, end = activity.split("-
+
+=== Sample 16 | tokens=223 ===
+], 
+     [0, 0, 0, 1, 0, 0, 1, 0], 
+     [0, 0, 0, 0, 1, 1, 0, 0], 
+     [0, 0, 0, 0, 0, 1, 0, 0], 
+     [0, 0, 0, 0, 0, 0, 0, 0], 
+     [0, 0, 0, 0, 0, 0, 0, 1], 
+     [1, 0, 0, 0, 0, 0, 0, 0]]
+
+# Call topological sorting function and print result
+has_cycle, topological_layers = topol_sort(G)
+if has_cycle:
+    print('There is no topological sort, the graph has a cycle
+
+=== Sample 17 | tokens=80 ===
+: distances[n])
+    unvisited_nodes.remove(current_node)
+
+    for neighbor, weight in graph[current_node].items():
+      if distances[current_node] + weight < distances[neighbor]:
+        distances[neighbor] = distances[current_node] + weight
+        predecessors[neighbor] = current_node
+
+  # Print the distances and predecessors
+  print('Distance from node:
+
+=== Sample 18 | tokens=172 ===
+ i, robot in enumerate(robots):
+    robot_task_allocation[robot] = tasks[i]
+
+# Calculate the start time for each robot based on their assigned tasks
+robot_times = {}
+for robot, task in robot_task_allocation.items():
+    task_time = task / 5  # Assuming each task takes 5 units of time
+    start_time = task_time * robot
+    robot_times[robot] = start_time
+
+# Calculate the time saved by optimizing robot usage
+time_saved = sum([time for robot, time in robot_times.items()])
+optimized_total_time = total_time - time_saved
+
+# Display the optimized usage of robots
+print('Optimized Robot Usage:
+
+=== Sample 19 | tokens=44 ===
+ = [item for sublist in Another_Table.values() for item in sublist]
+print(Another_Table_List)
+
+print('Output Question 1:
+
+=== Sample 20 | tokens=60 ===
+_affected_nodes": newly_affected_nodes
+    }
+
+    # Save results to JSON file
+    timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S
+
+=== Sample 21 | tokens=94 ===
+pop()
+        if current_task.completed:
+            continue
+        
+        live_tasks.add(current_task.name)
+        for dependency in current_task.dependencies:
+            if dependency.name not in live_tasks:
+                task_stack.append(dependency)
+        
+        current_task.complete()
+
+    return live_tasks
+
+
+# Usage
+project = Project('Project A
+
+=== Sample 22 | tokens=129 ===
+    
+    for _ in range(length):
+        if goal < decider and goal > nx[0]:
+            bts.append(0)
+            nx = [nx[0], nx[0] + ratios[0] * (nx[1] - nx[0])]
+        elif goal > decider and goal < nx[1]:
+            bts.append(1)
+            nx = [nx[0] + ratios[0] * (nx[1] - nx[0]), nx[1]]
+        else:
+            raise ValueError('Invalid encoded data
+
+=== Sample 23 | tokens=119 ===
+
+        for point, value in mines_with_neighbors.items():
+            if value == -1:
+                continue
+            mines_without_neighbours = update_mines_in_direction_set(point, mines, s, v)
+            if not mines_without_neighbours:
+                mines_with_neighbors[point] = -1
+                changes = True
+                
+    for (x, y), value in mines_with_neighbors.items():
+        if value != -1:
+            print(x, y)
+
+# Example usage
+clear_grid('mine_file.txt
+
+=== Sample 24 | tokens=25 ===
+ n-1):
+        print('Degree should be in the range [3, n-1]
+
+=== Sample 25 | tokens=43 ===
+ = test
+        if D < 1 or D > 31 or H < 0 or H > 24 or M < 0 or M > 60:
+            results.append('Invalid Input
+
+=== Sample 26 | tokens=12 ===
+         if alt < dist.get(v, float('inf
+
+=== Sample 27 | tokens=153 ===
+ for i, position in enumerate(pos):
+        chron_copy.insert(position, unchron[i])
+    
+    return chron_copy
+
+
+def replace_letters(sol_set, scenes):
+    replaced_solutions = []
+    for sol in sol_set:
+        replaced = []
+        for letter in sol:
+            replaced.append(scenes[ord(letter) - 65])
+        replaced_solutions.append(",".join(replaced))
+    
+    return replaced_solutions
+
+
+# Main
+solution_set = solve()
+for solution in solution_set:
+    if len(solution) == 0:
+        print('invalid
+
+=== Sample 28 | tokens=13 ===
+              print('No more unsatisfied points
+
+=== Sample 29 | tokens=39 ===
+import networkx as nx
+import graph_tools as gt
+
+def main():
+    graph = gt.tx_graph()
+    graph.read_data('bigger_data.csv
+
+=== Sample 30 | tokens=163 ===
+ -991, -13832),
+    (15722, -991, -13832),
+    (15840, -991, -13832),
+    (15959, -991, -13832),
+    (15603, 9, -13832),
+    (15722, 9, -13832),
+    (15840, 9, -13832),
+    (15959, 9, -13832)),
+]
+# Function to extract the vertex values in the data
+def get_vertex(vertex_data):
+    for vertex in vertex_data:
+        for point in vertex:
+            if(point == ()):
+                print('No point at the current iteration
+
+=== Sample 31 | tokens=35 ===
+
+    
+    return part1_count, part2_count
+
+def convert_to_set(activity):
+    start, end = activity.split('-

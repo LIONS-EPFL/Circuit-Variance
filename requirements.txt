@@ -1,0 +1,36 @@
+# Tested with Python 3.10.19 for the ceap environment.
+#
+# PyGraphviz builds against Graphviz system libraries. Install those first, for example:
+#   Ubuntu/Debian: apt-get install -y graphviz libgraphviz-dev build-essential
+#   Conda: conda install -c conda-forge graphviz pygraphviz=1.14
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+numpy==1.24.3
+torch==2.2.2+cu121
+torchvision==0.17.2+cu121
+safetensors==0.4.2
+typeguard==3.0.2
+accelerate==0.26.1
+cmapy==0.6.6
+datasets==2.12.0
+einops==0.6.1
+ipykernel==7.1.0
+matplotlib==3.7.1
+pandas==1.5.3
+plotly==5.15.0
+pygraphviz==1.14
+scikit-learn==1.4.0
+scipy==1.9.3
+sentencepiece==0.2.0
+setuptools==80.9.0
+tiktoken==0.12.0
+tqdm==4.65.0
+transformer-lens==1.12.0
+transformers==4.37.2
+umap-learn==0.5.5
+wandb==0.13.11
+protobuf==4.23.2
+pyarrow==12.0.0
+opencv-python==4.7.0.72
+pytest==9.0.2

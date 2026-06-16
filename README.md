@@ -5,14 +5,17 @@ This repository contains the code and minimal reproduction artifacts for
 
 ![Circuit diagram](circuit_diagram.png)
 
+In particular, this repo includes
+a standalone CEAP implementation for scoring transformer components and
+selecting circuits, plus experiment scripts for studying resampling,
+rephrasing, and sample-wise variance.
 The circuit discovery code builds on a line of methods for automated circuit
 discovery and edge-level attribution, including
 [ACDC](https://github.com/ArthurConmy/Automatic-Circuit-Discovery),
 [EAP](https://arxiv.org/abs/2310.10348), and
-[EAP-IG](https://github.com/hannamw/eap-ig). In particular, this repo includes
-a standalone CEAP implementation for scoring transformer components and
-selecting circuits, plus experiment scripts for studying resampling,
-rephrasing, and samplewise variance.
+[EAP-IG](https://github.com/hannamw/eap-ig).
+CEAP improves upon EAP-IG by using [conductance](https://openreview.net/pdf?id=SylKoo0cKm), which satisfies
+[additive order preservation](https://arxiv.org/abs/2606.16920).
 
 ## Environment Setup
 

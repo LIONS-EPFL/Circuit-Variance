@@ -1,7 +1,7 @@
 # Demystifying Variance in Circuit Discovery of LLMs
 
 This repository contains the code and minimal reproduction artifacts for
-[Demystifying Variance in Circuit Discovery of LLMs](https://openreview.net/forum?id=oPmRcjTip0).
+[Demystifying Variance in Circuit Discovery of LLMs](https://arxiv.org/abs/2606.16920).
 
 ![Circuit diagram](circuit_diagram.png)
 
@@ -127,12 +127,14 @@ other experiments.
 ## Citation
 
 ```bibtex
-@inproceedings{
-wu2026demystifying,
-title={Demystifying Variance in Circuit Discovery of {LLM}s},
-author={Frank Zhengqing Wu and Francesco Tonin and Volkan Cevher},
-booktitle={Mechanistic Interpretability Workshop at ICML 2026},
-year={2026},
-url={https://openreview.net/forum?id=oPmRcjTip0}
+@misc{wu2026demystifyingvariancecircuitdiscovery,
+    title={Demystifying Variance in Circuit Discovery of LLMs}, 
+    author={Frank Zhengqing Wu and Francesco Tonin and Volkan Cevher},
+    year={2026},
+    eprint={2606.16920},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG},
+    url={https://arxiv.org/abs/2606.16920}, 
 }
+
 ```
